@@ -16,10 +16,17 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+<<<<<<< HEAD
     - name: Set up Python 3.8
       uses: actions/setup-python@v2
       with:
         python-version: 3.8
+=======
+    - name: Set up Python 3.9
+      uses: actions/setup-python@v2
+      with:
+        python-version: 3.9
+>>>>>>> aa57e3d52273f56f7a0c2f402b9327932e006cb5
     - name: Install dependencies
       run: |
         python -m pip install --upgrade pip
