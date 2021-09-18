@@ -1,0 +1,37 @@
+{
+  "name": "paketti",
+  "version": "1.0.0",
+  "description": "npm projekti",
+  "main": "index.js",
+  "dependencies": {
+    "express": "4.17.1"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.1"
+  },
+  "scripts": {
+    "test": "mocha",
+    "build": "babel ServerCodeFolder -s -d dist",
+    "pretest": "npm start",
+    "posttest": "npm stop",
+    "prestart": "echo 'starting server'",
+    "poststop": "echo 'stopping server'",
+    "start": "npm run build && node dist/server.js",
+    "stop": "node server.stop.js",
+    "omaskripti": "echo 'hello world'"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Pertzamus/OhKe.git"
+  },
+  "keywords": [
+    "node",
+    "npm"
+  ],
+  "author": "Pertti Korhonen",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Pertzamus/OhKe/issues"
+  },
+  "homepage": "https://github.com/Pertzamus/OhKe#readme"
+}
