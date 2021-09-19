@@ -33,10 +33,4 @@ def test_postinumero_jota_ei_loydy():
     assert tulos == "Tuntematon"
 
 
-def test_postinumerot_omalla_datalla(mocker):
-    oma_data = ERIKOISTAPAUKSET
-    mocker.patch('http_pyynto.hae_postinumerot', return_value=oma_data)
 
-    tulos = postitoimipaikka.etsi_toimipaikka('90210')
-
-    assert tulos == 'BEVERLY HILLS'
